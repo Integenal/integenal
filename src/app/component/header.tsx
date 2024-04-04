@@ -57,7 +57,7 @@ const Header: React.FC = () => {
         muted
         playsInline
         className="brightness-50 absolute w-full h-full object-cover">
-        <source src="/vid/bgint.mp4" type="video/mp4; codex=vp9" />
+        <source src="/vid/bgint.mp4" type="video/mp4 " />
       </video>
       <div
         className={`flex-grow-0 pb-12 z-10 transition-opacity duration-200 ${

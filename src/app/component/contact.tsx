@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Contact: React.FC = () => {
   return (
-    <div className="bg-[#020F12] min-h-svh text-center py-20 text-white flex flex-col justify-center gap-4 items-center">
+    <div className="bg-[#020F12] min-h-svh text-center py-10 lg:py-20 text-white flex flex-col justify-center gap-4 items-center">
       <div className="py-2">
         <Image
           className="h-28"
@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
       </div>
       <Anim initialX={0} initialY={100} visibleX={0} visibleY={0}>
         <>
-          <h2 className="text-5xl ">Contact Us</h2>
+          <h2 className="text-3xl md:text-5xl  ">Contact Us</h2>
           <form
             className="flex flex-col gap-6 lg:min-w-[500px] mt-10 px-10 min-w-full"
             action="">
