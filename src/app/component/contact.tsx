@@ -5,23 +5,25 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_i7cz7yf", "template_gcztfvn", form.current, {
-        publicKey: "DZFz5U5UFyb6PGcGF",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm("service_i7cz7yf", "template_gcztfvn", form.current, {
+          publicKey: "DZFz5U5UFyb6PGcGF",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -37,7 +39,7 @@ const Contact: React.FC = () => {
       </div>
       <Anim initialX={0} initialY={100} visibleX={0} visibleY={0}>
         <>
-          <h2 className="text-3xl md:text-5xl  ">Contact Us</h2>
+          <h2 className="text-3xl md:text-5xl">Contact Us</h2>
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -55,7 +57,7 @@ const Contact: React.FC = () => {
             <input
               id="email"
               name="email"
-              type="email" // Change typeof to type
+              type="email"
               required
               maxLength={128}
               placeholder="your E-mail"
@@ -81,5 +83,4 @@ const Contact: React.FC = () => {
     </div>
   );
 };
-
 export default Contact;
