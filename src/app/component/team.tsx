@@ -26,7 +26,7 @@ export default function Team() {
         initialY={0}
         visibleX={0}
         visibleY={0}>
-        <div className="h-fit relative grid lg:bg-[#eee6d2] py-6 px-3 rounded-xl lg:shadow-md shadow-zinc-900 place-items-center grid-cols-1  md:grid-cols-3 gap-10 lg:gap-24">
+        <div className="h-fit relative grid lg:bg-[#eee6d2] py-6 px-3 rounded-xl lg:shadow-md shadow-zinc-900 place-items-center grid-cols-1  md:grid-cols-2 gap-10 lg:gap-24">
           <span className="absolute font-Popp3 sm:text-center text-gray-700 text-xl -top-10 left-0 mb-6 hidden lg:block ">
             Members
           </span>
@@ -39,7 +39,7 @@ export default function Team() {
             visibleY={0}>
             <Mem
               id="1"
-              position="ceo"
+              position="Founder & Lead Developer"
               name="Jiro"
               link="github.com/jiroachkarian"
             />
@@ -52,22 +52,8 @@ export default function Team() {
             visibleY={0}>
             <Mem
               id="2"
-              position="ceo"
+              position="Cybersecurity Frontend Developer"
               name="Harout"
-              link="github.com/jiroachkarian"
-            />
-          </Anim>
-
-          <Anim
-            width="fit-content"
-            initialX={100}
-            initialY={0}
-            visibleX={0}
-            visibleY={0}>
-            <Mem
-              id="3"
-              position="ceo"
-              name="Carly"
               link="github.com/jiroachkarian"
             />
           </Anim>
