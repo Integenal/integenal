@@ -22,12 +22,14 @@ const About: React.FC = () => {
           </Anim>
         </div>
         <div className="h-fit w-full text-center lg:text-left  container justify-center item-center text-white px-16 py-5 ">
-          <p
-            className={`text-3xl lg:text-4xl leading-normal lg:leading-loose tracking-tight   `}>
-            Our team delivers exceptional results at affordable prices. We
-            prioritize efficiency and quality in every project, ensuring our
-            clients get the best value without breaking the bank.
-          </p>
+          <Anim initialX={0} initialY={100} visibleX={0} visibleY={0}>
+            <p
+              className={`text-3xl lg:text-4xl leading-normal lg:leading-loose tracking-tight   `}>
+              Our team delivers exceptional results at affordable prices. We
+              prioritize efficiency and quality in every project, ensuring our
+              clients get the best value without breaking the bank.
+            </p>
+          </Anim>
         </div>
       </section>
       <section className="h-full lg:py-28 flex justify-center items-center bg-gradient-to-r from-[#F2EBE3] to-[#F2EBE3] w-full ">
