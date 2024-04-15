@@ -40,6 +40,10 @@ const Popp3 = localfont({
 export const metadata: Metadata = {
   title: "Integenal",
   description: "..",
+  icons: {
+    icon: ["/favicon_iot/favicon.ico"],
+    apple: ["/favicon_iot/apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({
