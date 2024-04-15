@@ -43,7 +43,7 @@ export const Anim = ({
           }}
           animate={controls}
           initial="hidden"
-          transition={{ duration: 0.7, delay: 0.3 * index }}>
+          transition={{ duration: 0.7, delay: 0.5 * index }}>
           {child}
         </motion.div>
       ))}

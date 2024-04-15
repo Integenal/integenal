@@ -60,7 +60,7 @@ const Header: React.FC = () => {
         <source src="./vid/bgint.mp4" type="video/mp4 " />
       </video>
       <div
-        className={`flex-grow-0 pb-12 z-10 transition-opacity duration-200 ${
+        className={`flex-grow-0 pb-12 z-10 transition-opacity duration-500 ${
           imageLoaded ? "opacity-100" : "opacity-0 -translate-y-10"
         } `}>
         <Image
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
         </Anim>
       </div>
       <div
-        className={`flex-grow-0 pb-20 md:pb-10 z-10 transition-all duration-200  ${
+        className={`flex-grow-0 pb-20 md:pb-10 z-10 transition-all duration-500  ${
           imageLoaded ? "opacity-100" : "opacity-0 -translate-y-10"
         }  `}>
         <Image
