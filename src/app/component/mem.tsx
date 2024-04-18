@@ -15,7 +15,7 @@ const Mem: React.FC<Props> = ({ id, name, link, position }) => {
       <Link href={link}>
         <div className="w-full flex justify-center">
           <Image
-            src={`./assets/svg/integenal-mem-${id}.svg`}
+            src={`./assets/svg/integenal-mem-${id}.png`}
             alt={name}
             width={155}
             height={155}
