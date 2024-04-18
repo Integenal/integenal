@@ -1,13 +1,6 @@
-import ScrollObs from "../methods/scroll";
 import type { AppProps } from "next/app";
 
-function Myweb({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      {typeof window !== "undefined" && (
-        <ScrollObs>{<Component {...pageProps} />}</ScrollObs>
-      )}{" "}
-    </>
-  );
+function Myweb({}: AppProps) {
+  return <></>;
 }
 export default Myweb;
